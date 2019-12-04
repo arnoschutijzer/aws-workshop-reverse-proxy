@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /nginx.conf
-    destination: /etc/nginx/nginx.conf
+    destination: /etc/nginx
 hooks:
   BeforeInstall:
     - location: scripts/stop.sh
