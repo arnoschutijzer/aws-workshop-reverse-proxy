@@ -1,0 +1,10 @@
+version: 0.0
+os: linux
+files:
+  - source: /nginx.conf
+    destination: /etc/nginx/nginx.conf
+hooks:
+  BeforeInstall:
+    - location: scripts/stop.sh
+  AfterInstall:
+    - location: scripts/start.sh
